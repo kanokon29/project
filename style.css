@@ -1,39 +1,39 @@
 
-/* =========================
-   FONT & RESET
-========================= */
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* พื้นหลังเว็บไซต์ */
 body {
     font-family: 'Mali', cursive;
-    background: #fff0f4;
+    background: linear-gradient(135deg, #ffe5ed, #fff3f7, #fce4ef);
     color: #805d70;
     min-height: 100vh;
     padding: 40px 15px;
 }
 
-/* =========================
-   MAIN WRAPPER
-========================= */
-
+/* จัดเนื้อหาทั้งหมดให้อยู่ตรงกลาง */
 .wrapper {
+    width: 100%;
     max-width: 850px;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* ให้แต่ละส่วนมีความกว้างเท่ากัน */
+.wrapper > * {
+    width: 100%;
+}
 
+/* HEADER */
 .page-header {
     text-align: center;
-    margin-bottom: 35px;
-    position: relative;
+    margin-bottom: 30px;
 }
 
 .flower {
@@ -41,22 +41,21 @@ body {
 }
 
 .mini-title {
-    font-size: 11px;
-    letter-spacing: 3px;
+    font-size: 12px;
+    letter-spacing: 2px;
     color: #c78ba5;
-    margin-top: 10px;
 }
 
 .page-header h1 {
     font-family: 'Itim', cursive;
-    font-size: 52px;
+    font-size: 48px;
     color: #d981a5;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .subtitle {
     color: #b68ba0;
-    font-size: 14px;
+    text-align: center;
 }
 
 .header-line {
@@ -68,36 +67,27 @@ body {
     margin: 15px auto;
 }
 
-/* =========================
-   PROFILE CARD
-========================= */
-
+/* PROFILE CARD */
 .profile-card {
-    background: white;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto 35px;
     padding: 35px 20px;
+    background: white;
+    border: 2px solid #f8d6e2;
     border-radius: 30px;
     text-align: center;
-    border: 2px solid #f8d6e2;
-    box-shadow: 0 8px 25px rgba(190, 125, 155, 0.12);
+    box-shadow: 0 8px 25px rgba(190,125,155,0.12);
     position: relative;
-    transition: 0.3s;
-}
-
-.profile-card:hover {
-    transform: translateY(-5px);
 }
 
 .sticker {
     position: absolute;
-    top: 18px;
+    top: 15px;
     right: 20px;
     background: #ffe4ed;
     color: #cf7f9f;
     padding: 8px 15px;
     border-radius: 20px;
-    font-family: 'Itim', cursive;
     transform: rotate(5deg);
 }
 
@@ -119,20 +109,17 @@ body {
 
 .hello {
     color: #ce8ba5;
-    font-size: 14px;
     margin-bottom: 8px;
 }
 
 .profile-card h2 {
     color: #b96f91;
     font-size: 22px;
-    font-weight: 600;
 }
 
 .nickname {
     color: #ce91aa;
     margin-top: 8px;
-    font-size: 14px;
 }
 
 .profile-tags {
@@ -149,16 +136,14 @@ body {
     margin: 4px;
 }
 
-/* =========================
-   SECTION HEADING
-========================= */
-
+/* SECTION TITLE */
 .section-heading {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin: 40px 0 20px;
+    margin: 10px 0 20px;
+    text-align: center;
 }
 
 .section-heading h2 {
@@ -167,14 +152,12 @@ body {
     font-size: 30px;
 }
 
-/* =========================
-   INFORMATION CARDS
-========================= */
-
+/* INFORMATION GRID */
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
+    width: 100%;
 }
 
 .info-card {
@@ -183,26 +166,22 @@ body {
     border-radius: 22px;
     text-align: center;
     border: 1px solid #f5d4e0;
-    box-shadow: 0 5px 15px rgba(190, 125, 155, 0.08);
+    box-shadow: 0 5px 15px rgba(190,125,155,0.08);
     transition: 0.3s;
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-    background: #fff9fb;
-    box-shadow: 0 8px 20px rgba(190, 125, 155, 0.15);
 }
 
-.icon {
-    display: block;
+.info-card .icon {
     font-size: 28px;
-    margin-bottom: 8px;
 }
 
-.label {
+.info-card .label {
     color: #c18ba3;
     font-size: 12px;
-    margin-bottom: 7px;
+    margin: 8px 0;
 }
 
 .info-card h3 {
@@ -215,10 +194,7 @@ body {
     grid-column: span 2;
 }
 
-/* =========================
-   HOBBY CARD
-========================= */
-
+/* HOBBY CARD */
 .hobby-card {
     margin-top: 25px;
     padding: 25px;
@@ -255,18 +231,14 @@ body {
     font-size: 13px;
 }
 
-/* =========================
-   LETTER CARD
-========================= */
-
+/* LETTER CARD */
 .letter-card {
     background: #fffdf8;
     margin-top: 25px;
     padding: 30px;
     border-radius: 25px;
     border: 2px dashed #e9b5c8;
-    box-shadow: 0 7px 20px rgba(190, 125, 155, 0.1);
-    position: relative;
+    box-shadow: 0 7px 20px rgba(190,125,155,0.1);
 }
 
 .letter-header {
@@ -303,10 +275,6 @@ body {
     margin-bottom: 15px;
 }
 
-.letter-content p:last-child {
-    margin-bottom: 0;
-}
-
 .letter-footer {
     text-align: right;
     margin-top: 18px;
@@ -315,10 +283,7 @@ body {
     font-size: 20px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/* FOOTER */
 footer {
     text-align: center;
     margin-top: 35px;
@@ -327,18 +292,14 @@ footer {
     line-height: 2.2;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
+/* MOBILE */
 @media (max-width: 500px) {
-
     body {
         padding: 25px 12px;
     }
 
     .page-header h1 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .profile-card {
@@ -363,10 +324,6 @@ footer {
 
     .letter-card {
         padding: 20px 15px;
-    }
-
-    .letter-header h2 {
-        font-size: 23px;
     }
 
     .letter-content {
