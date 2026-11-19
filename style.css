@@ -1,0 +1,40 @@
+
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: darkred;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile {
+    background-color: white;
+    width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px gray;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    color: deeppink;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.8;
+}
