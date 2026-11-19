@@ -1,40 +1,210 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: pink;
-    font-family: Arial, sans-serif;
+    font-family: 'Mali', cursive;
+    background: linear-gradient(135deg, #ffe4ec, #fff0f5, #fce1f0);
+    min-height: 100vh;
+    padding: 40px 15px;
+    color: #795568;
+}
+
+/* กล่องหลัก */
+.container {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 30px;
     text-align: center;
+    border: 3px solid #ffd6e5;
+    box-shadow: 0 10px 30px rgba(220, 130, 165, 0.2);
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(220, 130, 165, 0.3);
+}
+
+/* ส่วนหัว */
+header {
+    margin-bottom: 25px;
+}
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #d98ca9;
 }
 
 h1 {
-    color: darkred;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    font-size: 36px;
+    color: #e58aaa;
+    margin: 8px 0;
 }
 
-.profile {
-    background-color: white;
-    width: 500px;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px gray;
+.subtitle {
+    font-size: 13px;
+    color: #b98ca1;
 }
 
-img {
-    width: 150px;
-    height: 150px;
+/* รูปโปรไฟล์ */
+.profile-image {
+    margin: 20px auto;
+    width: 170px;
+    height: 170px;
+    padding: 7px;
+    border: 3px dashed #f5a9c4;
     border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
+/* ชื่อ */
 h2 {
-    color: deeppink;
+    color: #df83a6;
+    font-size: 23px;
+    margin-top: 15px;
 }
 
-p {
-    color: black;
-    font-size: 18px;
+h3 {
+    color: #bd7895;
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.nickname {
+    font-size: 13px;
+    color: #d9a0b7;
+}
+
+/* ข้อมูลส่วนตัว */
+.info-card {
+    background: #fff5f8;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ffe0eb;
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+    color: #d77e9e;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 5px;
+    border-bottom: 1px dashed #f4c8d8;
+    font-size: 13px;
     text-align: left;
-    line-height: 1.8;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item span:first-child {
+    color: #d17d9d;
+    font-weight: 600;
+}
+
+.info-item span:last-child {
+    color: #806477;
+    text-align: right;
+}
+
+/* ข้อความถึงอาจารย์ */
+.message-card {
+    margin-top: 22px;
+    padding: 22px;
+    background: #fff0f5;
+    border: 1px solid #ffd6e5;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.message-card h3 {
+    text-align: center;
+    color: #d77e9e;
+    margin-bottom: 18px;
+}
+
+.message-card p {
+    font-size: 13px;
+    line-height: 2.1;
+    color: #806477;
+    text-indent: 25px;
+    margin-bottom: 12px;
+}
+
+.message-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* งานอดิเรก */
+.hobby {
+    margin-top: 20px;
+    background: #fff0f5;
+    padding: 18px;
+    border-radius: 18px;
+}
+
+.hobby p {
+    font-size: 13px;
+    color: #a87991;
+    margin-top: 10px;
+}
+
+/* ส่วนท้าย */
+footer {
+    margin-top: 25px;
+    color: #e18eac;
+    font-size: 14px;
+    line-height: 2;
+}
+
+footer p:last-child {
+    font-size: 11px;
+}
+
+/* รองรับโทรศัพท์ */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .info-item {
+        font-size: 11px;
+    }
+
+    .profile-image {
+        width: 145px;
+        height: 145px;
+    }
+
+    .message-card p {
+        font-size: 12px;
+    }
 }
