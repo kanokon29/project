@@ -4,108 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว | My Profile</title>
 
+    <title>My Profile ♡ Kanokon</title>
+
+    <!-- Google Fonts ฟอนต์ลายมือ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600;700&family=Itim&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="wrapper">
 
-        <header>
-            <p class="small-title">WELCOME TO MY WORLD</p>
+        <!-- หัวเว็บไซต์ -->
+        <header class="page-header">
+            <span class="flower">🌷</span>
+            <p class="mini-title">WELCOME TO MY LITTLE WORLD</p>
             <h1>My Profile ♡</h1>
-            <p class="subtitle">ยินดีต้อนรับเข้าสู่ประวัติส่วนตัวของฉัน</p>
+            <p class="subtitle">A little story about me</p>
+            <span class="header-line"></span>
         </header>
 
-        <div class="profile-image">
-            <img src="profile.png" alt="รูปภาพโปรไฟล์">
+        <!-- การ์ดโปรไฟล์ -->
+        <section class="profile-card">
+
+            <span class="sticker">♡ Hello! ♡</span>
+
+            <div class="profile-image">
+                <img src="profile.png" alt="รูปโปรไฟล์">
+            </div>
+
+            <p class="hello">สวัสดีค่ะ ยินดีที่ได้รู้จัก ♡</p>
+
+            <h2>น.ส. กนกอร สุขสมวงศ์</h2>
+
+            <p class="nickname">Nickname : พลอย</p>
+
+            <div class="profile-tags">
+                <span>🎀 นักศึกษา</span>
+                <span>💻 IT Student</span>
+            </div>
+
+        </section>
+
+        <!-- หัวข้อข้อมูล -->
+        <div class="section-heading">
+            <span>🌸</span>
+            <h2>About Me</h2>
+            <span>🌸</span>
         </div>
 
-        <h2>สวัสดีค่ะ! 🌷</h2>
-        <h3>น.ส. กนกอร สุขสมวงศ์</h3>
-        <p class="nickname">ชื่อเล่น : พลอย ♡</p>
+        <!-- การ์ดข้อมูลส่วนตัว -->
+        <section class="info-grid">
 
-        <div class="info-card">
-
-            <h3>♡ ข้อมูลส่วนตัว ♡</h3>
-
-            <div class="info-item">
-                <span>🎀 ชื่อเล่น</span>
-                <span>พลอย</span>
+            <div class="info-card">
+                <span class="icon">🎂</span>
+                <p class="label">วันเกิด</p>
+                <h3>15 พฤศจิกายน 2549</h3>
             </div>
 
-            <div class="info-item">
-                <span>🎂 วันเกิด</span>
-                <span>15 พฤศจิกายน 2549</span>
+            <div class="info-card">
+                <span class="icon">🎀</span>
+                <p class="label">อายุ</p>
+                <h3>20 ปี</h3>
             </div>
 
-            <div class="info-item">
-                <span>🌷 อายุ</span>
-                <span>20 ปี</span>
+            <div class="info-card">
+                <span class="icon">💗</span>
+                <p class="label">สัญชาติ</p>
+                <h3>ไทย</h3>
             </div>
 
-            <div class="info-item">
-                <span>💗 สัญชาติ</span>
-                <span>ไทย</span>
+            <div class="info-card">
+                <span class="icon">🎓</span>
+                <p class="label">ระดับการศึกษา</p>
+                <h3>ปวส.2</h3>
             </div>
 
-            <div class="info-item">
-                <span>🏫 สถานศึกษา</span>
-                <span>วิทยาลัยเทคนิคสมุทรปราการ</span>
+            <div class="info-card wide-card">
+                <span class="icon">🏫</span>
+                <p class="label">สถานศึกษา</p>
+                <h3>วิทยาลัยเทคนิคสมุทรปราการ</h3>
             </div>
 
-            <div class="info-item">
-                <span>📚 แผนกวิชา</span>
-                <span>เทคโนโลยีสารสนเทศ</span>
+            <div class="info-card wide-card">
+                <span class="icon">💻</span>
+                <p class="label">แผนกวิชา</p>
+                <h3>เทคโนโลยีสารสนเทศ</h3>
             </div>
 
-            <div class="info-item">
-                <span>🎓 ระดับการศึกษา</span>
-                <span>ปวส.2</span>
+        </section>
+
+        <!-- การ์ดงานอดิเรก -->
+        <section class="hobby-card">
+            <span class="icon">🧸</span>
+            <h2>My Hobbies</h2>
+            <p>สิ่งที่ชอบทำในเวลาว่าง</p>
+
+            <div class="hobby-list">
+                <span>🎧 ฟังเพลง</span>
+                <span>🎬 ดูหนัง</span>
+                <span>📖 อ่านหนังสือ</span>
+            </div>
+        </section>
+
+        <!-- การ์ดข้อความถึงอาจารย์ -->
+        <section class="letter-card">
+
+            <div class="letter-header">
+                <span>💌</span>
+                <h2>A Little Message</h2>
+                <span>💗</span>
             </div>
 
-            <div class="info-item">
-                <span>🎧 งานอดิเรก</span>
-                <span>ฟังเพลง ดูหนัง อ่านหนังสือ</span>
-            </div>
-
-        </div>
-
-        <div class="message-card">
-            <h3>💌 สิ่งที่อยากบอกอาจารย์</h3>
-
-            <p>
-                ตอนแรกที่ยังไม่รู้จักกัน อาจารย์ดูมีความดุ
-                เป็นคนมีระเบียบวินัยมาก หลังจากได้รู้จัก
-                มีมุมที่อ่อนโยน ไม่ได้น่ากลัว
-                เป็นคนที่ทำให้รู้สึกมีกำลังใจในการเรียน
+            <p class="letter-subtitle">
+                สิ่งที่อยากบอกอาจารย์จากใจ
             </p>
 
-            <p>
-                ถ้าอาจารย์กำลังอ่านอยู่อยากจะบอกว่า
-                สิ่งที่พิมพ์มาจากใจจริง ๆ
-                รู้สึกดีใจทุกครั้งที่เรียนกับอาจารย์
-                ขอบคุณค่ะ ♡
-            </p>
-        </div>
+            <div class="letter-content">
+                <p>
+                    ตอนแรกที่ยังไม่รู้จักกัน อาจารย์ดูมีความดุ
+                    เป็นคนมีระเบียบวินัยมาก หลังจากได้รู้จัก
+                    มีมุมที่อ่อนโยน ไม่ได้น่ากลัว
+                    เป็นคนที่ทำให้รู้สึกมีกำลังใจในการเรียน
+                </p>
 
-        <div class="hobby">
-            <h3>♡ My Favorite Things ♡</h3>
-            <p>🎀 ฟังเพลง　 🌷 ดูหนัง　 🧸 อ่านหนังสือ</p>
-        </div>
+                <p>
+                    ถ้าอาจารย์กำลังอ่านอยู่อยากจะบอกว่า
+                    สิ่งที่พิมพ์มาจากใจจริง ๆ
+                    รู้สึกดีใจทุกครั้งที่เรียนกับอาจารย์
+                    ขอบคุณค่ะ ♡
+                </p>
+            </div>
 
+            <div class="letter-footer">
+                With love, Ploy ♡
+            </div>
+
+        </section>
+
+        <!-- Footer -->
         <footer>
+            <p>🌷 Thank you for visiting my profile 🌷</p>
             <p>Made with love ♡</p>
-            <p>Thank you for visiting my profile!</p>
         </footer>
 
-    </div>
+    </main>
 
 </body>
 </html>
